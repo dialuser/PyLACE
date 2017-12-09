@@ -1,0 +1,3 @@
+SBATCH_OUTPUT=$prj_name.o$SLURM_JOBID
+$SSH_CONN "$JOB_SCRIPT update_job_info $IMS_JOB_ID $SLURM_JOBID"
+$SSH_CONN "$JOB_SCRIPT update $IMS_JOB_ID running"
